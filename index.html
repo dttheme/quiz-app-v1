@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flavor Pairing Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+  </head>
+  <body>
+    <main>
+      <header><h1 role="banner">Flavor Pairing Quiz</h1></header>
+      <section>
+          <span class="js-question-count hidden" style='float:left;'>Question 0 of 10</span>
+          <span class='js-question-score hidden' style='float:right;'>Correct: 0, Incorrect: 0</span>
+      </section>
+      <section class="js-start-page">
+        <h2>You will be tested on your knowledge of different flavor pairings.</h2>
+        <button class="btn readyStartQuizButton">Ready?</button>
+      </section>
+      <section class='js-quiz-page quiz-page hidden'>
+        <img id='answerImage' src="">
+        <div class='js-quiz-question'></div>
+        <form id='form1' method="get" class="answerForm">
+          <div class='js-quiz-answers' role='radiogroup'>
+            </div>
+            <button role='button' type='submit' form='form1' value='Submit' class='submitAnswerButton'>Submit</button>
+        </form>
+      </section>
+      <section class='js-answer-page answer-page hidden'>
+          <div class='js-provide-feedback'></div>
+          <div class='js-answer-string answer-string'></div><br>
+        <button role='button' type='submit' class='btn nextQuestionButton'>Next Question</button>
+      </section>
+      <section class='js-main js-quiz-over quiz-over hidden'>
+          <p style='font-size: 22px;'><b>Done!</b></p><br>
+          Here's how you did:
+          <br><br>
+          <div class="js-score"></div>
+          <button role='button' type='submit' class='quizAgain'>Again?</button>
+      </section>
+</main>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+  <script src="https://use.fontawesome.com/7f641b72ff.js"></script>
+  </body>
+</html>
